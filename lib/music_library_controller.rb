@@ -30,8 +30,6 @@ class MusicLibraryController
         list_songs_by_genre
       elsif user_input == "play song"
         play_song
-      else
-        puts "Please enter a valid command."
       end
     end
   end
