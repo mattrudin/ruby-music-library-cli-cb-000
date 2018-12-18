@@ -5,7 +5,7 @@ class MusicLibraryController
   end
 
   def call
-    user_input = ""
+    @user_input = ""
     if user_input != "exit"
       puts "Welcome to your music library!"
       puts "To list all of your songs, enter 'list songs'."
@@ -16,7 +16,7 @@ class MusicLibraryController
       puts "To play a song, enter 'play song'."
       puts "To quit, type 'exit'."
       puts "What would you like to do?"
-      user_input = gets.chomp
+      @user_input = gets.chomp
     end
   end
 
